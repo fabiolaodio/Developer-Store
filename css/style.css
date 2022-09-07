@@ -150,7 +150,7 @@ nav{
 }
 .product-img{
     width: 70%;
-    height: 15rem;
+    height: 10rem;
     object-fit: cover;
     border-radius: 0.25rem;
 }
@@ -181,6 +181,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0.5rem;
 
 }
 .product-icons{
@@ -233,7 +234,7 @@ nav{
 .subcontainer--product p{
     text-align: center;
     margin: 0px;
-    padding: 6px;
+    padding: 4px;
     color: var(--clr-grey-5);
 }
 .subcontainer--product p:nth-child(2){
@@ -331,6 +332,11 @@ nav{
 }
 .filters p{
     color: var(--clr-grey-5);
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
 }
 
 
