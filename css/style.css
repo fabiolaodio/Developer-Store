@@ -1,14 +1,30 @@
 :root{
-    --font-titles-main:'Kaushan Script';
     --clr-primary-1: hsl(21, 91%, 17%);
     --clr-primary-2: hsl(21, 84%, 25%);
     --clr-primary-3: hsl(21, 81%, 29%);
     --clr-primary-4: hsl(21, 77%, 34%);
     --clr-primary-5: hsl(21, 62%, 45%);
+    --clr-primary-6: hsl(21, 57%, 50%);
     --clr-primary-7: hsl(21, 65%, 59%);
+    --clr-primary-8: hsl(21, 80%, 74%);
+    --clr-primary-9: hsl(21, 94%, 87%);
+    --clr-primary-10: hsl(21, 100%, 94%);
     --clr-grey-1: #102a42;
-    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-2: hsl(211, 39%, 23%);
     --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
 }
 body{
     margin: 0px;
@@ -23,9 +39,10 @@ nav{
     height: 10vh;
     width: 100%;
     position: absolute;
-    z-index: 100;
-    
-
+    z-index: 3;
+}
+.nav-products{
+    position: static;
 }
 
 .title-developerStore{
@@ -38,7 +55,7 @@ nav{
 .nav-links a{
     text-decoration: none;
     margin-right: 48px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white
 }
 .nav-links a:hover{
@@ -268,14 +285,55 @@ nav{
 }
 
 .products--home{
-    background-color: var(--clr-grey-5);
+    min-height: 20vh;
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-5);
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8%;
+    
  
 }
 .products--home h1{
+    color: var(--clr-grey-5);
+}
+.products-pg{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    position: relative;
+    margin: 4rem auto;
+    gap: 10px;
+    width: 90vw;
+}
+
+/* PRODUCTS filter */
+.search-form{
+    background-color: var(--clr-grey-10);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+.companies{
+    display: flex;
+    flex-direction: column;
+}
+
+.filters h4{
     color: var(--clr-grey-1);
 }
+.company-btn{
+    background-color: transparent;
+    color: var(--clr-grey-5);
+    border: none;
+    text-align: start;
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+.filters p{
+    color: var(--clr-grey-5);
+}
+
+
 
 
 
